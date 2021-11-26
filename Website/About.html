@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Test Website</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">Frackt</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Designs.html">Designs</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="#"class="active">About</a></li>
+      </ul>
+    </header>
+    <section>
+      
+      <img src="https://i.ibb.co/CPs8yqQ/bg.png" id="mountains_behind">
+      <h2 id="text">FRACKT</h2>
+
+        </head>
+        <body>
+          <div class="clock">
+            <p id="days"></p>
+            <p id="hours"></p>
+            <p id="mins"></p>
+            <p id="secs"></p>
+            <h2 id="end"></h2>
+            </div>
+            <script>
+            // The data/time we want to countdown to
+            var countDownDate = new Date("dec 25, 2021 16:37:52").getTime();
+        
+            // Run myfunc every second
+            var myfunc = setInterval(function() {
+        
+            var now = new Date().getTime();
+            var timeleft = countDownDate - now;
+                
+            // Calculating the days, hours, minutes and seconds left
+            var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+                
+            // Result is output to the specific element
+            document.getElementById("days").innerHTML = days + "d "
+            document.getElementById("hours").innerHTML = hours + "h " 
+            document.getElementById("mins").innerHTML = minutes + "m " 
+            document.getElementById("secs").innerHTML = seconds + "s " 
+                
+            // Display the message when countdown is over
+            if (timeleft < 0) {
+                clearInterval(myfunc);
+                document.getElementById("days").innerHTML = ""
+                document.getElementById("hours").innerHTML = "" 
+                document.getElementById("mins").innerHTML = ""
+                document.getElementById("secs").innerHTML = ""
+                document.getElementById("end").innerHTML = "TIME UP!!";
+            }
+            }, 1000);
+            </script>
+        </body>
+        </html>
+  
+        <script src="style.js"></script>
+    </body>
+        </script>
+      <div class="content">
+    </section>
+    <div class="sec" id="sec">
+      <h2>Parallax Background Scrolling</h2>
+      <p>9000 MEMBERS!! I think this deserves a hand up. Keep your eyes open for the HashLips art engine update this weekend. 👄 @everyone thank you for being apart 
+      of this HashLips journey. HashLips has a question. Would you like to see more of HashLips aka Daniel in the videos?<br><br>9000 MEMBERS!! I think this 
+      deserves a hand up. Keep your eyes open for the HashLips art engine update this weekend. 👄 @everyone thank you for being apart of this HashLips journey. 
+      HashLips has a question. Would you like to see more of HashLips aka Daniel in the videos?
+      9000 MEMBERS!! I think this deserves a hand up. Keep your eyes open for the HashLips art engine update this weekend. 👄 @everyone thank you for being 
+      apart of this HashLips journey. HashLips has a question. Would you like to see more of HashLips aka Daniel in the videos?</p>
+    </div class="sec">
+    <script type="text/javascript">
+      let moon = document.getElementById('moon');
+      let stars = document.getElementById('stars');
+      let mountains_behind = document.getElementById('mountains_behind');
+      let mountains_front = document.getElementById('mountains_front');
+      let text = document.getElementById('text');
+      let btn = document.getElementById('btn');
+      let header = document.querySelector('header');
+      window.addEventListener('scroll', function() {
+        var value = window.scrollY;
+        moon.style.top = -value * -1.05 + 'px';
+        stars.style.left = value * 0.25 + 'px';
+        mountains_behind.style.top =-value * -0.5 + 'px';
+        header.style.top =-value * -0.5 + 'px';
+        mountains_front.style.top =-value * 0 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        btn.style.marginTop = value * 1.5 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+      });
+    </script>
+  </body>
+</html>

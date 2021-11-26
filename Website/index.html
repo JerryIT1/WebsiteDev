@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Test Website</title>
+
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="app.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">Frackt</a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="Designs.html">Designs</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
+  </header>
+  <section>
+
+    <img src="https://i.ibb.co/CPs8yqQ/bg.png" id="mountains_behind"> 
+    <h2 id="text">FRACKT</h2>
+
+    </head>
+
+    <body>
+      <div class=descCont>
+        <div class="desc">
+          <h2 class='header1'>
+            Hello and welcome to FRACKT
+          </h2>
+          <p>
+            a new type of nft art.
+            a collection of 1,000 nfts, each with new design.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+        </div>
+        
+        <div class="clock">
+          <p id="days"></p>
+          <p id="hours"></p>
+          <p id="mins"></p>
+          <p id="secs"></p>
+          <h2 id="end"></h2>
+        </div>
+      </div>
+      <script>
+        // The data/time we want to countdown to
+        var countDownDate = new Date("dec 25, 2021 16:37:52").getTime();
+
+        // Run myfunc every second
+        var myfunc = setInterval(function () {
+
+          var now = new Date().getTime();
+          var timeleft = countDownDate - now;
+
+          // Calculating the days, hours, minutes and seconds left
+          var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+          // Result is output to the specific element
+          document.getElementById("days").innerHTML = days + "d "
+          document.getElementById("hours").innerHTML = hours + "h "
+          document.getElementById("mins").innerHTML = minutes + "m "
+          document.getElementById("secs").innerHTML = seconds + "s "
+
+          // Display the message when countdown is over
+          if (timeleft < 0) {
+            clearInterval(myfunc);
+            document.getElementById("days").innerHTML = ""
+            document.getElementById("hours").innerHTML = ""
+            document.getElementById("mins").innerHTML = ""
+            document.getElementById("secs").innerHTML = ""
+            document.getElementById("end").innerHTML = "TIME UP!!";
+          }
+        }, 1000);
+      </script>
+    </body>
+
+</html>
+
+<script src="style.js"></script>
+</body>
+</script>
+<div class="content">
+  
+  </section>
+  <div class="sec">
+    <h2>Information About Project</h2>
+    <p>9000 MEMBERS!! I think this deserves a hand up. Keep your eyes open for the HashLips art engine update this
+      weekend. 👄 @everyone thank you for being apart
+      of this HashLips journey. HashLips has a question. Would you like to see more of HashLips aka Daniel in the
+      videos?<br><br>9000 MEMBERS!! I think this
+      deserves a hand up. Keep your eyes open for the HashLips art engine update this weekend. 👄 @everyone thank you
+      for being apart of this HashLips journey.
+      HashLips has a question. Would you like to see more of HashLips aka Daniel in the videos?
+      9000 MEMBERS!! I think this deserves a hand up. Keep your eyes open for the HashLips art engine update this
+      weekend. 👄 @everyone thank you for being
+      apart of this HashLips journey. HashLips has a question. Would you like to see more of HashLips aka Daniel in the
+      videos?</p>
+  </div>
+  </script>
+  </body>
+  </html>
