@@ -102,13 +102,10 @@ section img#mountains_behind{
   white-space: nowrap;
   font-size: 50px;
   right: 70%;
+  line-height:28px;
 }
 
 
-/* #text:hover {
-text-decoration: rgb(184, 157, 8);
-color: rgb(184, 157, 8);
-} */
 
 .sec
 {
