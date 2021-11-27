@@ -19,7 +19,6 @@
     </ul>
   </header>
   <section>
-
     <img src="https://i.ibb.co/CPs8yqQ/bg.png" id="mountains_behind"> 
     <h2 id="text">FRACKT <br><br>the first math <br><br>generated NFT</h2>
 
@@ -32,8 +31,8 @@
             Hello and welcome to FRACKT
           </h2>
           <p>
-            a new type of nft art.
-            a collection of 1,000 nfts, each with new design.
+            A new type of nft art.
+            A collection of 1,000 nfts, each with new design.
             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -41,15 +40,17 @@
             remaining essentially unchanged.
           </p>
         </div>
-        
-        <div class="clock">
-          <p id="days"></p>
-          <p id="hours"></p>
-          <p id="mins"></p>
-          <p id="secs"></p>
-          <h2 id="end"></h2>
-        </div>
+    </div>
+    <div class='clockContainer'>
+      <div class="clock">
+        <p class='clockNumbers' id="days"></p>
+        <p class='clockNumbers' id="hours"></p>
+        <p class='clockNumbers' id="mins"></p>
+        <p class='clockNumbers' id="secs"></p>
+        <h2 class='clockNumbers' id="end"></h2>
       </div>
+      <div class='presaleContainer'>Presale Coming Soon...</div>
+    </div>
       <script>
         // The data/time we want to countdown to
         var countDownDate = new Date("dec 25, 2021 16:37:52").getTime();
@@ -67,10 +68,10 @@
           var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
 
           // Result is output to the specific element
-          document.getElementById("days").innerHTML = days + "d "
-          document.getElementById("hours").innerHTML = hours + "h "
-          document.getElementById("mins").innerHTML = minutes + "m "
-          document.getElementById("secs").innerHTML = seconds + "s "
+          document.getElementById("days").innerHTML = `${days}`
+          document.getElementById("hours").innerHTML =`: ${hours}`
+          document.getElementById("mins").innerHTML = `: ${minutes}`
+          document.getElementById("secs").innerHTML = `: ${seconds}`
 
           // Display the message when countdown is over
           if (timeleft < 0) {
