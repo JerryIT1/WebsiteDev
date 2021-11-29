@@ -22,15 +22,14 @@ section {
 
 header
 {
-  position:sticky;
-  top: -25px;
+  position:fixed;
   left: 0;
   width: 100%;
   padding: 30px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  z-index: 100000;
   background-color: rgb(184, 157, 8,0.7) ;
   transition: top 0.3s;
 }

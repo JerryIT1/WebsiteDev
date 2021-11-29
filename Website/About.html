@@ -7,7 +7,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <a href="index.html" class="logo">Frackt</a>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -59,6 +59,18 @@
   </footer>
   </body>
 
+  <script>
+  
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header").style.fontSize = "13px";
+      } else {
+        document.getElementById("header").style.fontSize = "15px";
+      }
+    }
+    </script>
 </html>
 </body>
 </body>
