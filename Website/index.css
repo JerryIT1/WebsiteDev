@@ -202,3 +202,33 @@ section:before {
   color: white;
   padding-left: 70px;
 }
+
+.joinDiscorda{
+  display: flex;
+  position: relative;
+  font-size: 100px;
+  color: white;
+}
+
+.joinDiscord{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 300px;
+  width: 60%;
+  background-color: black;
+  left: 20%;
+}
+
+.hyperlinks{
+  background-color: black;
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(184, 157, 8, 0.7);
+  transition: top 0.3s;
+}
