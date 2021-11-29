@@ -87,6 +87,30 @@ body{
   font-size: 50px;
 }
 
+.Ownersa{
+  display: flex;
+  position: relative;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  left: 10%;
+  bottom: -20%;
+  
+}
+
+.Owners{
+  display: flex;
+  position: relative;
+  justify-content: left;
+  height: 400px;
+  width: 60%;
+  background-color: black;
+  left: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  align-items: center;
+}
+
 .hyperlinks{
   background-color: black;
   height: 10%;
@@ -110,4 +134,46 @@ body{
   left: 45%;
   height: 80px;
   width: 100px;
+}
+
+
+.pictureBox img{
+  border-radius: 50%; 
+  width: 35%;
+  height: 35%;
+
+}
+
+.Ownersabc{
+  display: flex;
+  position: relative;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  left: 90%;
+  bottom: -20%;
+  
+}
+
+.Job{
+  display: flex;
+  position: relative;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  left: 0%;
+  bottom: -20%;
+    
+  
+}
+
+.Joba{
+  display: flex;
+  position: relative;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  left: 90%;
+  bottom: -20%;
+  
 }
