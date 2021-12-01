@@ -25,23 +25,6 @@
     </head>
 
     <body>
-      <div class=descCont>
-        <div class="desc">
-          <h2 class='header1'>
-            Welcome to FRACKT.
-            <br>Join the NFT fractal community <br>
-          </h2>
-          <p>
-            NFT projects so far have primarily been images generated from dozens of photo layers,
-            that are combined to generate thousands of NFTs.
-            By using the beauty of math to generate fractals,
-            FRACKT steers away from this formula to introduce a new,
-            more beautiful NFT. This project brings a whole new meaning to unique NFTs by using formulas to create many
-            complex 3D fractals that are completely different from the rest of the FRACKT collection. Check out the
-            gallery page to see how crazy the variation is.
-          </p>
-        </div>
-      </div>
       <div class='clockContainer'>
         <div class="clock">
           <p class='clockNumbers' id="days"></p>
@@ -50,7 +33,14 @@
           <p class='clockNumbers' id="secs"></p>
           <h2 class='clockNumbers' id="end"></h2>
         </div>
-        <div class='presaleContainer'>Presale Coming Soon...</div>
+        <div class='fracktPrice'>
+          <div class='comingSoon'>FRACKT Price</div>
+          <div class='comingSoon'>0.06 ETH</div>
+        </div>
+        <div class='presaleDiv'>
+          <div class='comingSoon'>Presale</div>
+          <div class='comingSoon'>Coming Soon...</div>
+        </div>
       </div>
       <script>
         // The data/time we want to countdown to
@@ -67,21 +57,35 @@
           var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
           var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
           var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+          let secs = document.getElementById("secs");
+          let hrs = document.getElementById("hours");
+          let min = document.getElementById("mins");
+          let day = document.getElementById("days");
+          let ed = document.getElementById("end")
 
-          // Result is output to the specific element
-          document.getElementById("days").innerHTML = `${days}`
-          document.getElementById("hours").innerHTML = `: ${hours}`
-          document.getElementById("mins").innerHTML = `: ${minutes}`
-          document.getElementById("secs").innerHTML = `: ${seconds}`
-
-          // Display the message when countdown is over
+          if (seconds <= 9) {
+            secs.innerHTML = `:0${seconds}`
+          } else {
+            secs.innerHTML = `:${seconds}`
+          }
+          if (minutes <= 9) {
+            min.innerHTML = `:0${minutes}`
+          } else {
+            min.innerHTML = `:${minutes}`
+          }
+          if (hours <= 9) {
+            hrs.innerHTML = `:0${hours}`
+          } else {
+            hrs.innerHTML = `:${hours}`
+          }
+          day.innerHTML = `${days}`
           if (timeleft < 0) {
             clearInterval(myfunc);
-            document.getElementById("days").innerHTML = ""
-            document.getElementById("hours").innerHTML = ""
-            document.getElementById("mins").innerHTML = ""
-            document.getElementById("secs").innerHTML = ""
-            document.getElementById("end").innerHTML = "TIME UP!!";
+            day.innerHTML = ""
+            hrs.innerHTML = ""
+            min.innerHTML = ""
+            secs.innerHTML = ""
+            ed.innerHTML = "TIME UP!!";
           }
         }, 1000);
       </script>
@@ -90,9 +94,9 @@
 
 </html>
 <script>
-  
-  window.onscroll = function() {scrollFunction()};
-  
+
+  window.onscroll = function () { scrollFunction() };
+
   function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       document.getElementById("header").style.fontSize = "13px";
@@ -100,7 +104,7 @@
       document.getElementById("header").style.fontSize = "15px";
     }
   }
-  </script>
+</script>
 
 <script src="style.js"></script>
 </body>
@@ -114,18 +118,23 @@
         <img class='imgDiv1'
           src="https://images-ext-2.discordapp.net/external/Ot_jiuU89zweO1HfMF7Jid4umq07dUrbQjVAYUAKi4Q/https/i.ibb.co/gR9W2Lq/FE3r-L3z-XIAEoa6s.jpg?width=672&height=672" />
         <div class="headerContainer">
-          <h1>alksjdn kljan kjlsndkjan skjdnda ksnj</h1>
-          <span class="caption">Text below the imageasdf sdf asd fasd fasd fas df asdf sadf sad fasd f</span>
-          <span class="caption">Text below the imageasd fasd fads fasd fasd fasdkhjfbsadkjhfbsad hkkhjsda fhbsadhbfhbsda hfbhas df</span>
+          <h1 class='h1Header'>Welcome to FRACKT.</h1>
+          <span class="caption1">Join the NFT fractal community</span>
+          <span class="caption2">NFT projects so far have primarily been images generated from dozens of photo layers,
+            that are combined to generate thousands of NFTs. By using the beauty of math to generate fractals, FRACKT
+            steers away from this formula to introduce a new, more beautiful NFT. This project brings a whole new
+            meaning to unique NFTs by using formulas to create many complex 3D fractals that are completely different
+            from the rest of the FRACKT collection. Check out the gallery page to see how crazy the variation is.</span>
         </div>
       </div>
     </div>
     <div class='itemContainer2'>
       <div class="item2">
         <div class="headerContainer">
-          <h1>alksjdn kljan kjlsndkjan skjdnda ksnj</h1>
-          <span class="caption">Text below the imageasdf adsf as dfa sdf asd fasd f</span>
-          <span class="caption">Text below the imageas dfasdf asd fsad f asdf asdfsad fasd fasd fa sdf</span>
+          <h1 class='h1Header'>Join the community before presale!</h1>
+          <span class="caption1">Presale will begin on December 19th at 4pm CST
+          </span>
+          <span class="caption2">Only 1000 unique FRACKTs will be minted at 0.06 ETH each</span>
         </div>
         <img class='imgDiv2'
           src="https://images-ext-1.discordapp.net/external/bfG6ZtMVU5hSdMLU-qOpvE9is1BZk9rO6c18GWkiFOU/https/i.ibb.co/FhNLz9t/FE3q-TPZWUAMYYlv.jpg?width=672&height=672" />

@@ -67,6 +67,7 @@ header ul li a:hover
 body{
     background-color: rgb(211, 211, 211);
     position: relative;
+    align-items: center;
 }
 
 .aboutContainer{
@@ -136,43 +137,32 @@ body{
 }
 
 
-.pictureBox img{
+.pictureBox{
   border-radius: 50%; 
-  width: 35%;
-  height: 35%;
-
+  width: 50%;
+  height: 50%;
 }
 
-.Ownersabc{
-  display: flex;
-  position: relative;
-  font-size: 30px;
+.blackDiv{
+  background-color: black;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 10%;
+  display: grid;
+  height: 400px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.developer,.designer{
+ position: relative;
+ left: 100px;
+}
+
+.text12{
+  font-size: large;
   color: white;
-  text-decoration: none;
-  left: 90%;
-  bottom: -20%;
-  
 }
 
-.Job{
-  display: flex;
-  position: relative;
-  font-size: 15px;
-  color: white;
-  text-decoration: none;
-  left: 0%;
-  bottom: -20%;
-    
-  
-}
 
-.Joba{
-  display: flex;
-  position: relative;
-  font-size: 15px;
-  color: white;
-  text-decoration: none;
-  left: 90%;
-  bottom: -20%;
-  
-}
